@@ -53,6 +53,7 @@ files, which can then be read into a document in the usual way.
 %doc %{_texmfdistdir}/doc/generic/pst-eps/spirale.eps
 #- source
 %doc %{_texmfdistdir}/source/generic/pst-eps/Makefile
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,3 +64,5 @@ files, which can then be read into a document in the usual way.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
