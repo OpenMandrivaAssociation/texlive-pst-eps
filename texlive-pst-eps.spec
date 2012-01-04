@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-pst-eps
 Version:	1.0
-Release:	1
+Release:	2
 Summary:	Create EPS files from PSTricks figures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-eps
